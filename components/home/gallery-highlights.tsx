@@ -131,7 +131,6 @@ export function GalleryHighlights() {
                     </Button>
                   </div>
 
-                  {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     <h3 className="text-xl font-bold text-white mb-2">{image.title}</h3>
 
