@@ -1,7 +1,7 @@
-import { Calendar, Clock, ArrowRight, Newspaper, Bell, TrendingUp } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { ArrowRight, Bell, Calendar, Clock, Newspaper, TrendingUp } from "lucide-react"
 
 const newsItems = [
   {
@@ -12,7 +12,7 @@ const newsItems = [
       "Our annual sports day was held with great enthusiasm and participation from all students showcasing their athletic prowess...",
     date: "2024-01-15",
     time: "10:00 AM",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/img.jpeg?height=200&width=300",
     trending: true,
   },
   {
@@ -23,7 +23,7 @@ const newsItems = [
       "The mid-term examination schedule for all classes has been published. Students are advised to check the timetable...",
     date: "2024-01-12",
     time: "2:30 PM",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/img.jpeg?height=200&width=300",
     urgent: true,
   },
   {
@@ -34,7 +34,7 @@ const newsItems = [
       "Congratulations to all participants and winners of our annual science fair. The event featured innovative projects...",
     date: "2024-01-10",
     time: "11:15 AM",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/img.jpeg?height=200&width=300",
     trending: false,
   },
   {
@@ -45,7 +45,7 @@ const newsItems = [
       "Monthly parent-teacher meeting will be held on January 20th. All parents are requested to attend and discuss...",
     date: "2024-01-08",
     time: "9:00 AM",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/img.jpeg?height=200&width=300",
     urgent: false,
   },
 ]

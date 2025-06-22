@@ -1,15 +1,15 @@
 "use client"
 
-import { useState } from "react"
-import Image from "next/image"
-import { Card } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { Card } from "@/components/ui/card"
 import { Camera, Eye, Heart, Share2 } from "lucide-react"
+import Image from "next/image"
+import { useState } from "react"
 
 const galleryImages = [
   {
     id: 1,
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/img.jpeg?height=400&width=600",
     alt: "Modern Science Laboratory",
     title: "Science Laboratory",
     category: "Facilities",
@@ -18,7 +18,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/img.jpeg?height=400&width=600",
     alt: "Digital Library",
     title: "Digital Library",
     category: "Learning Spaces",
@@ -27,7 +27,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/img.jpeg?height=400&width=600",
     alt: "Sports Complex",
     title: "Sports Complex",
     category: "Recreation",
@@ -36,7 +36,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/img.jpeg?height=400&width=600",
     alt: "Cultural Performance",
     title: "Annual Cultural Program",
     category: "Events",
@@ -45,7 +45,7 @@ const galleryImages = [
   },
   {
     id: 5,
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/img.jpeg?height=400&width=600",
     alt: "Computer Laboratory",
     title: "IT Laboratory",
     category: "Technology",
@@ -54,7 +54,7 @@ const galleryImages = [
   },
   {
     id: 6,
-    src: "/placeholder.svg?height=400&width=600",
+    src: "/img.jpeg?height=400&width=600",
     alt: "Main Auditorium",
     title: "Grand Auditorium",
     category: "Venues",

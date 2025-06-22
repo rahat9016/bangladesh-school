@@ -30,7 +30,7 @@ export function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         isScrolled ? "glass backdrop-blur-xl" : "bg-transparent"
       }`}
     >
@@ -71,7 +71,7 @@ export function Header() {
 
                 
       {/* Main Header */}
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-4 ">
         <div className="flex items-center justify-between">
           {/* Logo and School Name */}
           <Link href="/" className="flex items-center space-x-4 group">
@@ -95,118 +95,6 @@ export function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
-          {/* <div className="hidden lg:flex items-center space-x-8">
-            <NavigationMenu>
-              <NavigationMenuList className="space-x-2">
-                <NavigationMenuItem>
-                  <Link href="/" legacyBehavior passHref>
-                    <NavigationMenuLink className="px-6 py-3 text-gray-700 hover:text-blue-600 font-semibold transition-all duration-300 hover:bg-blue-50 rounded-full">
-                      Home
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-gray-700 hover:text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-50">
-                    About Us
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-64 p-4 glass-card rounded-2xl">
-                      {[
-                        "Our Story",
-                        "Messages",
-                        "Mission & Vision",
-                        "Administration",
-                      ].map((item) => (
-                        <Link
-                          key={item}
-                          href={`/about/${item
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")}`}
-                          className="block px-4 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-green-50 rounded-xl transition-all duration-300 font-medium"
-                        >
-                          {item}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-gray-700 hover:text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-50">
-                    Admission
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-64 p-4 glass-card rounded-2xl">
-                      {[
-                        "Admission Notice",
-                        "Leaflet",
-                        "Admission Procedure",
-                        "Online Admission Form",
-                        "Admission Requirements"
-                      ].map((item) => (
-                        <Link
-                          key={item}
-                          href={`/admission/${item
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")}`}
-                          className="block px-4 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-green-50 rounded-xl transition-all duration-300 font-medium capitalize"
-                        >
-                          {item}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                  <NavigationMenuTrigger className="text-gray-700 hover:text-blue-600 font-semibold px-6 py-3 rounded-full hover:bg-blue-50">
-                    Facilities
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <div className="w-64 p-4 glass-card rounded-2xl">
-                      {[
-                        "Multimedia Classroom",
-                        "Laboratories",
-                        "Library",
-                        "Counselling",
-                        "Transport",
-                        "Gurdianship",
-                        "Hostel",
-                        "Medical",
-                        "Auditorium",
-                      ].map((item) => (
-                        <Link
-                          key={item}
-                          href={`/academic/${item
-                            .toLowerCase()
-                            .replace(/\s+/g, "-")}`}
-                          className="block px-4 py-3 hover:bg-gradient-to-r hover:from-blue-50 hover:to-green-50 rounded-xl transition-all duration-300 font-medium capitalize"
-                        >
-                          {item}
-                        </Link>
-                      ))}
-                    </div>
-                  </NavigationMenuContent>
-                </NavigationMenuItem>
-                {["Gallery", "Contact"].map((item) => (
-                  <NavigationMenuItem key={item}>
-                    <Link
-                      href={`/${item.toLowerCase()}`}
-                      legacyBehavior
-                      passHref
-                    >
-                      <NavigationMenuLink className="px-6 py-3 text-gray-700 hover:text-blue-600 font-semibold transition-all duration-300 hover:bg-blue-50 rounded-full capitalize">
-                        {item}
-                      </NavigationMenuLink>
-                    </Link>
-                  </NavigationMenuItem>
-                ))}
-              </NavigationMenuList>
-            </NavigationMenu>
-
-          </div> */}
           <HeaderNavigationMenu />
           {/* Mobile Menu Button */}
           <Button

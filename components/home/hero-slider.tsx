@@ -1,28 +1,28 @@
 "use client"
 
-import { useState, useEffect } from "react"
-import Image from "next/image"
-import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react"
+import Image from "next/image"
+import { useEffect, useState } from "react"
 
 const slides = [
   {
     id: 1,
-    image: "/placeholder.svg?height=700&width=1400",
+    image: "/bg.jpg?height=700&width=1400",
     title: "Excellence in Education",
     subtitle: "Nurturing minds, building futures at Bangladesh International School & College",
     cta: "Learn More",
   },
   {
     id: 2,
-    image: "/placeholder.svg?height=700&width=1400",
+    image: "/bg.jpg?height=700&width=1400",
     title: "Modern Facilities",
     subtitle: "State-of-the-art infrastructure for comprehensive learning experience",
     cta: "Explore Campus",
   },
   {
     id: 3,
-    image: "/placeholder.svg?height=700&width=1400",
+    image: "/bg.jpg?height=700&width=1400",
     title: "Admission 2024 Open",
     subtitle: "Join our community of learners and achieve your academic dreams",
     cta: "Apply Now",
@@ -58,7 +58,7 @@ export function HeroSlider() {
             className="object-cover"
             priority={index === 0}
           />
-          <div className="absolute inset-0 gradient-overlay" />
+          {/* <div className="absolute inset-0 gradient-overlay" /> */}
 
           {/* Content */}
           <div className="absolute inset-0 flex items-center justify-center">

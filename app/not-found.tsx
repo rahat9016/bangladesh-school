@@ -16,7 +16,7 @@ export default function NotFound() {
       <div className="max-w-4xl mx-auto text-center">
 
         {/* 404 Illustration */}
-        <div className="mb-8">
+        {/* <div className="mb-8">
           <div className="relative">
             <div className="text-9xl md:text-[12rem] font-bold text-gradient opacity-20 select-none">404</div>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -27,16 +27,16 @@ export default function NotFound() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Error Message */}
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gradient mb-6">Oops! Page Not Found</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
             The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.
             Don't worry, let's get you back on track!
           </p>
-        </div>
+        </div> */}
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

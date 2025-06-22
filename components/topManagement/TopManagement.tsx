@@ -21,7 +21,7 @@ export default function TopManagement() {
     ]
     return (
     <div className="flex flex-col gap-4">
-        {data.map(item => <ManagementCard {...item} />)}
+        {data.map((item, index) => <ManagementCard key={`management-${index}`} {...item} />)}
     </div>
   )
 }
