@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card } from "@/components/ui/card"
-import { Camera, Eye, Heart, Share2 } from "lucide-react"
-import Image from "next/image"
-import { useState } from "react"
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Camera, Eye, Heart, Share2 } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 
 const galleryImages = [
   {
@@ -61,10 +62,10 @@ const galleryImages = [
     likes: 267,
     views: 1400,
   },
-]
+];
 
 export function GalleryHighlights() {
-  const [hoveredImage, setHoveredImage] = useState<number | null>(null)
+  const [hoveredImage, setHoveredImage] = useState<number | null>(null);
 
   return (
     <section className="py-20 relative overflow-hidden">
@@ -78,9 +79,12 @@ export function GalleryHighlights() {
             <Camera className="h-5 w-5 text-white" />
             <span className="text-white font-semibold">Campus Gallery</span>
           </div>
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Campus Life</h2>
+          <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Campus Life
+          </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Explore our vibrant campus and discover what makes our school community special
+            Explore our vibrant campus and discover what makes our school
+            community special
           </p>
         </div>
 
@@ -105,7 +109,9 @@ export function GalleryHighlights() {
                 {/* Overlay */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent transition-all duration-300 ${
-                    hoveredImage === image.id ? "opacity-100" : "opacity-0 group-hover:opacity-100"
+                    hoveredImage === image.id
+                      ? "opacity-100"
+                      : "opacity-0 group-hover:opacity-100"
                   }`}
                 >
                   {/* Category Badge */}
@@ -132,7 +138,9 @@ export function GalleryHighlights() {
                   </div>
 
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                    <h3 className="text-xl font-bold text-white mb-2">{image.title}</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">
+                      {image.title}
+                    </h3>
 
                     {/* Stats */}
                     <div className="flex items-center space-x-4 text-gray-300 text-sm">
@@ -154,15 +162,15 @@ export function GalleryHighlights() {
 
         {/* View All Button */}
         <div className="text-center mt-12">
-          <Button
-            size="lg"
-            className="gradient-secondary hover:scale-105 transition-all duration-300 px-12 py-4 text-lg font-semibold rounded-full shadow-xl"
+          <Link
+            href={"/gallery"}
+            className="gradient-secondary hover:scale-105 transition-all duration-300 px-12 py-4 text-lg font-semibold rounded-full shadow-xl flex items-center justify-center text-center w-3/12 mx-auto text-white"
           >
             <Camera className="h-5 w-5 mr-2" />
             Explore Full Gallery
-          </Button>
-        </div>
+          </Link> 
+        </div>  
       </div>
     </section>
-  )
+  );
 }
